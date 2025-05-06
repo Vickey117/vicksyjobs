@@ -316,5 +316,16 @@
     font-weight: 500;
     box-shadow: 0 0 5px rgba(0,0,0,0.05);
   }
+.jobs-main {
+  padding: 2rem;
+}
+.jobs-main {
+  padding: 2rem;
+  background-image: url('job.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
     
   
