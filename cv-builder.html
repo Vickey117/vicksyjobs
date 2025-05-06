@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VicksyJobs | CV Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="cv-builder.js"></script>
+</head>
+<body>
+  <body class="cv-builder-page">
+  <header>
+    <div class="logo">VicksyJobs</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="services.html">Services</a>
+      <a href="cv-builder.html">CV Builder</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>UK-Style CV Builder</h1>
+    <p>Start building your professional CV below.</p>
+    <main class="cv-main">
+        <section class="cv-form">
+          <h2>Enter Your Details</h2>
+          <form id="cvForm">
+            <input type="text" id="cvName" placeholder="Full Name" required>
+            <input type="email" id="cvEmail" placeholder="Email Address" required>
+            <textarea id="cvStatement" placeholder="Personal Statement" required></textarea>
+            <textarea id="cvExperience" placeholder="Work Experience" required></textarea>
+            <textarea id="cvEducation" placeholder="Education" required></textarea>
+            <textarea id="cvSkills" placeholder="Skills (comma-separated)" required></textarea>
+            <button type="submit">Generate CV</button>
+          </form>
+        </section>
+      
+        <section id="cvPreview" class="cv-preview" style="display: none;">
+          <h2>Your CV Preview</h2>
+          <div id="cvOutput"></div>
+          <button onclick="window.print()">Download as PDF</button>
+        </section>
+      </main>
+      
+  </main>
+
+  <footer>
+    <p>&copy; Vickey-2025 JobHunt Website</p>
+  </footer>
+</body>
+</html>

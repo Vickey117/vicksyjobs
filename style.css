@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 80px; 
+  }
+  header {
+    background-color: #4d0345;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffd700;
+  }
+  .home-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: #712169;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #5a008a;
+  }
+  
+  footer {
+    background-color: white;
+    color: white; 
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+   
+  }
+  
+  .jobs-main {
+    padding: 2rem;
+  }
+  
+  .job-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  }
+  
+  .job-card h2 {
+    color: #8300b7;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-card button {
+    background-color: #9200b7;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .job-card button:hover {
+    background-color: #8a008a;
+  }
+  .signup-main {
+    padding: 2rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  #signupForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #signupForm input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #signupForm button {
+    background-color: #7d00b7;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #signupForm button:hover {
+    background-color: #7a008a;
+  }
+  .cv-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .cv-form, .cv-preview {
+    flex: 1 1 45%;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .cv-form input, 
+  .cv-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .cv-form button {
+    background-color: #9104a0;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cv-preview button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #88008a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cv-preview h3 {
+    margin-bottom: 0.5rem;
+    color: #9200b7;
+  }
+  @media (max-width: 768px) {
+    .cv-main {
+      flex-direction: column;
+    }
+  
+    .cv-form, .cv-preview {
+      flex: 1 1 100%;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    .home-main {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .job-card {
+      padding: 1rem;
+    }
+  }
+ 
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 1.5; 
+    }
+  .hero {
+    .hero {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+  }
+ 
+    
+  
+  
+  
+  
+  .cv-builder-page {
+    background-image: url('main.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; 
+    width: 100vw;  
+    
+  }
+  .hero-about {
+    background-color: #7d00b7;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .hero-about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-about button {
+    background: white;
+    color: #5e1199;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 3rem 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .about-card {
+    background: white;
+    padding: 1.5rem;
+    border-left: 4px solid #321b3b;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  }
+    
+  
