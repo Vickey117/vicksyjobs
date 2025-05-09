@@ -76,80 +76,120 @@
   
   footer {
     background-color: white;
-    color: white; 
+    color: rgb(0, 0, 0); 
     padding: 1rem 2rem;
     text-align: center;
     margin-top: 2rem;
    
   }
   
-  .jobs-main {
-    padding: 2rem;
-  }
-  
-  .job-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.05);
-  }
-  
-  .job-card h2 {
-    color: #8300b7;
-    margin-bottom: 0.5rem;
-  }
-  
-  .job-card button {
-    background-color: #9200b7;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .job-card button:hover {
-    background-color: #8a008a;
-  }
-  .signup-main {
-    padding: 2rem;
-    max-width: 500px;
-    margin: auto;
-  }
-  
-  #signupForm {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #signupForm input {
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  #signupForm button {
-    background-color: #7d00b7;
-    color: white;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #signupForm button:hover {
-    background-color: #7a008a;
-  }
-  .cv-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
-  }
+  /* Jobs Section with Background Image */
+.jobs-main {
+  padding: 2rem;
+  background: url('job1.png') center/cover no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Job Card Styles Remain Unchanged */
+.job-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.job-card h2 {
+  color: #8300b7;
+}
+
+.job-card button {
+  background-color: #9200b7;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.job-card button:hover {
+  background-color: #8a008a;
+}
+
+
+.jobs-main h1, 
+.jobs-main p {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.signup-page {
+  background-image: url('SIGN.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Dark Overlay for Contrast */
+.signup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.signup-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  max-width: 400px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+}
+
+
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#signupForm input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#signupForm button {
+  background-color: #7d00b7;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#signupForm button:hover {
+  background-color: #5a008a;
+}
+
   
   .cv-form, .cv-preview {
     flex: 1 1 45%;
@@ -236,7 +276,7 @@
       opacity: 1.5; 
     }
   .hero {
-    .hero {
+    
       height: 100vh;
       width: 100vw;
       display: flex;
@@ -244,7 +284,7 @@
       align-items: center;
       position: relative;
       z-index: 1;
-    }
+    
     
   }
   
@@ -316,19 +356,5 @@
     font-weight: 500;
     box-shadow: 0 0 5px rgba(0,0,0,0.05);
   }
-.jobs-main {
-  padding: 2rem;
-}
-.jobs-main {
-  padding: 2rem;
-  background-image: url('job.jpg');
- background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh; 
-    width: 100vw;  
-}
-
     
   
